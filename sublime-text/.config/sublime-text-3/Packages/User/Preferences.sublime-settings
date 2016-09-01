@@ -1,0 +1,62 @@
+{
+	"Seti_SB_bright": true,
+	"Seti_bold_slctdfile_labels": true,
+	"Seti_bold_slctdtab_labels": true,
+	"Seti_no_scroll_icons": true,
+	"Seti_orange_label": true,
+	"Seti_tabs_med": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.python - string - comment - constant.numeric"
+		}
+	],
+	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"dart_sdk_path": "/opt/dart-sdk/",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"__pycache__",
+		".idea",
+		".vscode",
+		".ropeproject"
+	],
+	"font_face": "YaHei Consolas Hybrid",
+	"font_size": 17,
+	"ignored_packages":
+	[
+		"no-Prefix",
+		"Vintage"
+	],
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"theme": "Seti.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

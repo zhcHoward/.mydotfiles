@@ -1,0 +1,40 @@
+{
+    "configs": {
+        "vim": {
+            "files": [".vimrc"],
+            "folders": [".vim/autoload/"]
+        },
+        "zsh": {
+            "files": [".zshrc"],
+            "folders": []
+        },
+        "tmux": {
+            "files": [".tmux.conf"],
+            "folders": []
+        },
+        "sublime-text": {
+            "path-prefix": ".config/sublime-text-3/Packages/User/",
+            "files": [
+                ".config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+                ".config/sublime-text-3/Packages/User/divider.sublime-snippet",
+                ".config/sublime-text-3/Packages/User/Doxy.sublime-settings",
+                ".config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+                ".config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+            ],
+            "folders": []
+        },
+        "sync_dotfiles": {
+            "files": ["/home/howard/Workspaces/Python/sync-configs/settings.json"],
+            "folders": []
+        }
+    },
+    "local": {
+        "home": "/home/howard/"
+    },
+    "cache": {
+        "home": "/home/howard/"
+    },
+    "remote": {
+        "git_repo": "git@github.com:zhcHoward/.mydotfiles.git"
+    }
+}

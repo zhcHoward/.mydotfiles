@@ -1,0 +1,30 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Codecs33",
+		"ConvertToUTF8",
+		"Dart",
+		"Django",
+		"Django Lookup Snippets",
+		"Django Manage Commands",
+		"DoxyDoxygen",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Git",
+		"GitGutter",
+		"Jinja2",
+		"JsFormat",
+		"Package Control",
+		"Pretty JSON",
+		"Seti_UI",
+		"Seti_UX",
+		"SideBarEnhancements",
+		"Terminal",
+		"Vuejs Complete Package"
+	]
+}

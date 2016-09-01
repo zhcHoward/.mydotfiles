@@ -1,0 +1,9 @@
+{
+    "profiles": [
+        {
+            "languages":  [ "python", "cython" ],
+            "parsers":    [ "LanguagePython" ],
+            "doc_styles": [ "Doxygen" ] // or "ApiDoc", "Sphinx" (you may consider Breathe's Doc)
+        }
+    ]
+}
