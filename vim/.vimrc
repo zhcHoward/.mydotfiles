@@ -69,6 +69,7 @@ nmap <leader>w :w!<cr>
 set so=7
 
 set number
+set relativenumber
 
 " Turn on the WiLd menu
 set wildmenu
@@ -418,6 +419,18 @@ Plug 'dart-lang/dart-vim-plugin'
 " json.vim
 Plug 'elzr/vim-json'
 
+" nerd commenter
+Plug 'scrooloose/nerdcommenter'
+
+" super tab
+Plug 'ervandew/supertab'
+
+" tagbar
+Plug 'majutsushi/tagbar'
+
+" emmet
+Plug 'mattn/emmet-vim'
+
 call plug#end()
 
 " nerdtree
@@ -430,14 +443,33 @@ let g:pymode_folding = 0
 let g:pymode_options_max_line_length = 100
 let g:pymode_options_colorcolumn = 1
 let g:pymode_doc = 0
-let g:pymode_lint_checkers = ['pyflakes']
+let g:pymode_lint_checkers = ['flake8']
 let g:pymode_lint_options_pyflakes = 
     \ {'max_line_length': g:pymode_options_max_line_length}
+
+" nerd commenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" lign line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => powerline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"python3 from powerline.vim import setup as powerline_setup
-"python3 powerline_setup()
-"python3 del powerline_setup
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 

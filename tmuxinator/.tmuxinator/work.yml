@@ -1,0 +1,12 @@
+name: <%= @args[0] %>
+root: ~/
+pre_window: workon <%= @args[0] %>
+startup_window: editor
+
+windows:
+  - server:
+      layout: even-horizontal
+      panes:
+        - python manage.py runserver 0.0.0.0:8000
+        - tail -f *.log
+  - editor: vim .

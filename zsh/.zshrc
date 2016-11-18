@@ -77,6 +77,7 @@ plugins=(git archlinux celery command-not-found common-aliases encode64 git-extr
 # User configuration
 # export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$PATH:/home/howard/.gem/ruby/2.3.0/bin
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,6 +90,7 @@ export LANG=en_US.UTF-8
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -109,7 +111,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 source /usr/bin/virtualenvwrapper.sh
 
 # powerline
-#. /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
+. /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
 
 alias p4=/home/howard/ProgramFiles/p4
 export P4PORT=10.32.11.3:3389
@@ -128,4 +130,7 @@ function _pip_completion {
 }
 compctl -K _pip_completion pip
 # pip zsh completion end
+
+# tmuxinator completion
+source ~/.bin/tmuxinator.zsh
 

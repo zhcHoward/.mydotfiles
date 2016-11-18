@@ -1,6 +1,6 @@
 {
 	"auto_formatting": true,
     "pep8_max_line_length": 100,
-    "python_interpreter": "/home/howard/.virtualenvs/bsy/bin/python2.7",
     "enable_signatures_tooltip": true,
+    "anaconda_gutter_theme": "alpha"
 }

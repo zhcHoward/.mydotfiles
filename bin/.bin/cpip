@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pip $@ --index-url https://pypi.douban.com/simple
+
